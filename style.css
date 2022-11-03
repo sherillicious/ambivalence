@@ -1,0 +1,186 @@
+/*BODY*/
+body{
+    background-color: #2d2d2d;
+    color: black;
+    font-size:16px;
+    font-family: 'Space Mono', monospace;
+}
+
+#main{
+    width:100%;
+    overflow:hidden;
+}
+
+#video{
+    width:75%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    float:left;
+    margin-top:2%;
+}
+
+#gallery-full{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img{
+    padding-top: 1%;
+    padding-left: 1%;
+    width:22%;
+    height:auto;
+    transition:transform 0.25s ease;
+}
+
+#scroll{
+    height:90vh;
+    overflow-y: scroll;
+    justify-content: center;
+    background-color:#c9c9c9;
+}
+
+#scroll img{
+    margin-left:23%;
+    width:55%;
+    margin-right:5%;
+    margin-top:5%;
+}
+
+#drawer{
+    background-color:#121212;
+    width:25%;
+    float:right;
+    position:sticky;
+}
+
+#emojiCounter{
+    position:fixed;
+    bottom:2%;
+    justify-content: flex-end;
+}
+
+#likeEmote{
+    margin-left: 3%;
+    padding-top:5%;
+    width:10%;
+}
+
+/*NAV BAR*/
+.topnav{
+    background-color: black;
+    overflow: hidden;
+    top:0;
+    padding-top:1%;
+    margin-top:0;
+}
+
+.topnav a{
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 1%;
+    padding: 12px 16px;
+    font-family: 'Space Mono', monospace;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider, .dark-mode .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#switch-gallery{
+    position:absolute;
+    margin-left:20%;
+}
+
+/* Dark Mode */
+.dark-mode{
+    background-color:whitesmoke;
+    color:black;
+}
+
+.dark-mode .topnav{
+        background-color:white;
+    }
+
+.dark-mode .topnav a{
+        background-color:white;
+        color:black;
+    }
+
+.dark-mode #drawer{
+    background-color:#B3B3B3;
+}
+
+.dark-mode #respond{
+    background-color:#B3B3B3;
+    color: black;
+}
+
+.dark-mode #scroll{
+    background-color:#E4E6EB;
+}

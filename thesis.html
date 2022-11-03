@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Error 401</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        
+    </head>
+    
+    <body onload="isDark();">
+        <div class="topnav">
+             <a class="active" href="#home">Home</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+        <div id="toggle-switch" style="position:absolute; right:6%; top:3%; z-index:1;">
+             <label class="switch" for="checkbox">
+                <input type="checkbox" id="checkbox" onclick="darkMode();toggleImage(); save()">
+                <span class="slider round"></span>
+                </label>
+                </div>
+        
+        <div id="main">
+        <div id="video">
+            <video width="100%" autoplay loop muted>
+                <source src="Images/Collage01.mp4" type="video/mp4"></video>
+        </div>
+        
+        <div id="drawer">
+            <div id="scroll">
+                <img src="https://i.ibb.co/wzfhF1z/Poster01-f-02.png" id="toggleImage">
+                <img src="https://i.ibb.co/fXWhC2S/Poster02-f-04.png" id="toggleImage2">
+                <img src="https://i.ibb.co/6Wr2J7k/Poster03-01.png" id="toggleImage3">
+                <img src="https://i.ibb.co/M6h85Xh/Poster04-01.png" id="toggleImage4">
+                <img src="https://i.ibb.co/2Kkz3Sg/Poster05-01-1.png" id="toggleImage5">
+                <img src="https://i.ibb.co/9r5MZZR/Poster06-01.png" id="toggleImage6">
+                <img src="https://i.ibb.co/9Wndcfp/Poster07.png" id="toggleImage7">
+                <img src="https://i.ibb.co/h9fssmk/Code-Poster01-01.png" id="toggleImage8">
+                
+            </div>
+         
+            
+        </div>
+            <div id="emojiCounter">
+                <input type="image" src="Images/like.png" id="likeEmote" onclick="document.getElementById('reactHidden').style.display='block';">              
+            </div>
+        </div>
+    </body>
+</html>

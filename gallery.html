@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Error 401</title>
+         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
+    </head>
+    
+    <body onload="isDark();">
+        <div class="topnav">
+            <a href="thesis.html">Home</a>
+            <a class="active"  href="#gallery">Gallery</a>
+        </div>
+        
+        <div id="toggle-switch" style="position:absolute; right:6%; top:3%; z-index:1;">
+             <label class="switch" for="checkbox">
+                <input type="checkbox" id="checkbox" onclick="darkMode();toggleImage(); save()">
+                <span class="slider round"></span>
+                </label>
+                </div>
+        
+        <div id="main">
+        <div id="gallery-full">
+            <img src="https://i.ibb.co/wzfhF1z/Poster01-f-02.png"onclick="onClick01(this);"style="cursor:zoom-in"; id="toggleImage" onmouseover="hover01(this);" onmouseout="unhover01(this);">
+            
+            <img src="https://i.ibb.co/fXWhC2S/Poster02-f-04.png" style="cursor:zoom-in" id="toggleImage2" onclick="onClick02(this);" onmouseover="hover02(this);" onmouseout="unhover02(this);">
+            
+            <img src="https://i.ibb.co/6Wr2J7k/Poster03-01.png" style="cursor:zoom-in" id="toggleImage3" onclick="onClick03(this);"onmouseover="hover03(this);" onmouseout="unhover03(this);">
+            
+            <img src="https://i.ibb.co/M6h85Xh/Poster04-01.png" onclick="onClick04(this);"style="cursor:zoom-in" id="toggleImage4" onmouseover="hover04(this);" onmouseout="unhover04(this);">
+            
+            <img src="https://i.ibb.co/2Kkz3Sg/Poster05-01-1.png" style="cursor:zoom-in" id="toggleImage5"onclick="onClick05(this);" onmouseover="hover05(this);" onmouseout="unhover05(this);">
+            
+            <img src="https://i.ibb.co/9r5MZZR/Poster06-01.png" style="cursor:zoom-in" id="toggleImage6" onclick="onClick06(this);" onmouseover="hover06(this);" onmouseout="unhover06(this);">
+            
+            <img src="https://i.ibb.co/9Wndcfp/Poster07.png" style="cursor:zoom-in" id="toggleImage7" onclick="onClick07(this);" onmouseover="hover07(this);" onmouseout="unhover07(this);">
+            
+            <img src="https://i.ibb.co/h9fssmk/Code-Poster01-01.png" style="cursor:zoom-in" id="toggleImage8"onclick="onClick08(this);" onmouseover="hover08(this);" onmouseout="unhover08(this);">
+          
+        </div>
+        <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <div class="w3-modal-content w3-animate-zoom">
+                <img id="img01" style="width:99%">
+            </div>
+        </div>
+        </div>
+        
+    </body>
+</html>
+
