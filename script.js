@@ -8,6 +8,8 @@ function load(){
     document.getElementById("checkbox").checked = checked;
 }
 
+load();
+
 function darkMode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
