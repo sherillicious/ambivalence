@@ -100,6 +100,12 @@ function isDark(){
     }
 }
 
+function isDark2(){
+    if(localStorage.getItem('toggle') == "true"){
+        darkMode();
+    }
+}
+
 function onClick01(element){
        
    if (localStorage.getItem('toggle') =="true"){
