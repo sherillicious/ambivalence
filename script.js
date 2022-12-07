@@ -19,7 +19,7 @@ function toggleImage() {
    var vid1 = "https://vimeo.com/778724493";
    var vid2 = "https://vimeo.com/778725476";
    
-   var imgElement = document.getElementById('toggleImage');
+   var imgElement = document.getElementById('toggleVid');
 
    imgElement.src = (imgElement.src === vid2)? vid1 : vid2;
   
