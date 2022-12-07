@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ambivalence</title>
+         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
+    </head>
+    
+    <body onload="isDark(); load();">
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a class="active" href="gif.html">GIFs</a>
+        </div>
+        
+        <div id="toggle-switch" style="position:absolute; right:6%; top:3%; z-index:1;">
+             <label class="switch" for="checkbox">
+                <input type="checkbox" id="checkbox" onclick="darkMode();toggleImage(); save()">
+                <span class="slider round"></span>
+                </label>
+                </div>
+        
+        <div id="main">
+        <div id="gallery-gif">
+            <img src="https://media.giphy.com/media/JEuIrLpbTOTiakuyJT/giphy.gif" class="gif">
+            
+            <img src="https://media.giphy.com/media/VxSeu78D0aAODo3dxN/giphy.gif" class="gif">
+            
+            <img src="https://media.giphy.com/media/IOvyQehtIbM6c5CiaM/giphy.gif" class="gif">
+            
+            <img src="https://media.giphy.com/media/2BXbtcJqVQIHRVyZl6/giphy-downsized-large.gif" class="gif">
+            
+            <img src="https://media.giphy.com/media/zpryo1HytEkwt5BjXk/giphy.gif" class="gif">
+            
+            <img src="https://media.giphy.com/media/R4rOZZZywL7fNxkpJj/giphy-downsized-large.gif" class="gif">
+            
+            <img src="https://media.giphy.com/media/XUQQyOnmlnWvdfixBC/giphy.gif" class="gif">
+          
+        </div>
+        </div>
+        
+    </body>
+</html>
