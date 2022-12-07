@@ -14,16 +14,8 @@ function darkMode() {
 }
 
 function toggleImage() { 
-  
- //video
-   var vid1 = "https://player.vimeo.com/video/778724493?h=9ee3605c84&amp;badge=0&amp;autoplay=1&amp;player_id=0&amp;mute=1&amp;loop=1&amp;app_id=58479";
-   var vid2 = "https://player.vimeo.com/video/778725476?h=2d0422415f&badge=0&autoplay=1&player_id=0&mute=1&amp;loop=1&amp;app_id=58479/embed";
-   
-   var imgElement = document.getElementById('toggleVid');
 
-   imgElement.src = (imgElement.src === vid2)? vid1 : vid2;
-  
-    //poster 01
+   //poster 01
    var img1 = "https://i.ibb.co/wzfhF1z/Poster01-f-02.png";
    var img2 = "https://i.ibb.co/MnsMwFT/SideB01.png";
    
@@ -87,6 +79,19 @@ function toggleImage() {
     
     imgElement8.src = (imgElement8.src === img16)?img15 : img16;
 }
+
+function toggleVideo(){
+    //video
+ var vid1 = "https://player.vimeo.com/video/778724493?h=9ee3605c84&amp;badge=0&amp;autoplay=1&amp;player_id=0&amp;mute=1&amp;loop=1&amp;app_id=58479";
+ var vid2 = "https://player.vimeo.com/video/778725476?h=2d0422415f&badge=0&autoplay=1&amp;player_id=0&mute=1&amp;loop=1&amp;app_id=58479/embed";
+ 
+ var imgElement = document.getElementById('toggleVid');
+
+ imgElement.src = (imgElement.src === vid2)? vid1 : vid2;
+  
+}
+
+
 
 function isDark(){
     if(localStorage.getItem('toggle') == "true"){
