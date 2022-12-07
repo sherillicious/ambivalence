@@ -13,7 +13,16 @@ function darkMode() {
     element.classList.toggle("dark-mode");
 }
 
-function toggleImage() {   
+function toggleImage() { 
+  
+  //video
+   var vid1 = "https://vimeo.com/778724493";
+   var vid2 = "https://vimeo.com/778725476";
+   
+   var imgElement = document.getElementById('toggleImage');
+
+   imgElement.src = (imgElement.src === vid2)? vid1 : vid2;
+  
     //poster 01
    var img1 = "https://i.ibb.co/wzfhF1z/Poster01-f-02.png";
    var img2 = "https://i.ibb.co/MnsMwFT/SideB01.png";
