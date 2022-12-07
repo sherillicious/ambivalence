@@ -106,6 +106,14 @@ function isDark2(){
     }
 }
 
+function isDarkHome(){
+    if(localStorage.getItem('toggle') == "true"){
+        darkMode();
+        toggleImage();
+        toggleVideo();
+    }
+}
+
 function onClick01(element){
        
    if (localStorage.getItem('toggle') =="true"){
