@@ -174,7 +174,7 @@ input:checked + .slider:before {
 
 /* Dark Mode */
 .dark-mode{
-    background-color:whitesmoke;
+    background-color:#f9fbff;
     color:black;
 }
 
